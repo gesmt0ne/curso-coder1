@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+/*----HEADER----*/
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+}
+
+
+header nav h2{
+    font-size: 40px;
+    color: white;
+    top: 15%;
+    left: 1%;
+}
+
+.head ul{
+    display: flex;
+    flex-wrap: wrap 700px;
+}
+
+.head .logo{
+    position: absolute;
+    left: 1%;
+    top: 8%;
+}
+
+
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+header{
+    background-color: rgba(13, 20, 20, 0.753);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.comoEnCasa{
+    padding-left: 3em;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/plato\ casero.jpg);
+    background-size: cover;
+}
+
+.comEnCasa .text a{
+    padding: 5px;
+}
+
+.text{
+    width: 40%;
+    position: relative;
+    left: 5em;
+    top: 15em;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+}
+
+.text h2{
+    font-size: 2.5rem;
+}
+.text p{
+    font-size: 1rem;
+}
+
+
+/*----MAIN----*/ 
+.platos .cardDiferente a{
+   padding: 4px;
+   text-decoration: none;
+   border: 2px solid gray;
+   border-radius: 10%;
+   background-color: black;
+   color: white;
+   size: 16px;
+   position: relative;
+   top: 25px;
+   left: 228px;
+}
+
+
+.platos .cardDiferente{
+    padding: 30px;
+}
+
+.platos .cardDiferente h2{
+    text-align: center;
+}
+
+.platos .cardDiferente p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.platosTitulo{
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    width: 100%;
+    background-color: rgba(13, 20, 20, 0.753);
+    text-align: center;
+}
+
+.platos{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(198, 199, 199, 0.753);
+}
+
+.cardDiferente{
+    align-items: center;
+    position: relative;
+    top: 10rem;
+}
+
+.card .cardDiferente{
+    display: flex;
+    flex-direction: row;
+}
+
+.card .cardDiferente{
+    display: flex;
+    flex-direction: row;
+}
+
+.platos .card{
+    position: relative;
+    top: 10rem;
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 15px;
+    box-shadow: 6px 7px 5px 1px rgba(79,63,63,0.75);
+    -webkit-box-shadow: 6px 7px 5px 1px rgba(79,63,63,0.75);
+    -moz-box-shadow: 6px 7px 5px 1px rgba(79,63,63,0.75);;
+}
+
+
+.comoEnCasa a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.comoEnCasa p{
+    margin-bottom: 20px;
+}
+
+.platos .card img{
+    width: 300px;
+    height: 350px;
+}
+
+.eventos{
+    width: 100%;
+    height: 100vh;
+}
+
+.eventos{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eventosContenedor{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px solid grey;
+}
+
+.eventos .eventosContenedor{
+    text-align: center;
+    text-shadow: 2px 2px 2px solid rgb(0, 0, 0);
+}
+
+.eventos .eventosContenedor h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.eventos .eventosContenedor a{
+    position: relative;
+    top: 1rem;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: white;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.eventos{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/evento3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.eventos img{
+    width: 350px;
+    height: 450px;
+    border: 5px solid rgba(13, 20, 20, 0.753);
+    margin: 5px;
+}
+
+.comoEnCasa .horarios{
+    position: absolute;
+    top: 16rem;
+    left: 20rem;
+    text-shadow: 2px black;    
+}
+
+.contacto{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/beef.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacto .redes img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 40rem;
+    left: 2rem;
+}
+
+.contacto table ,th ,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: aliceblue;
+}
+
+.contacto th, td{
+    padding: 10px;
+}
+
+.contacto th{
+    text-align: left;
+}
+
+.contactoContenedor{
+    position: relative;
+    color: white;
+    top: 8rem;
+    left: 3rem;   
+}
+
+.contactoContenedor h2{
+    font-size: 2rem;
+}
+
+
+.tablaContenedor{
+    position: relative;
+    top: 8rem;
+    left: 55rem;
+}
+
+.formulario{
+    position: relative;
+    left: 55rem;
+    top: 20rem;
+    color: white;
+}
+
+.quienesSomos img{
+    width: 350px;
+    height: 450px;
+    border: 2px solid white;
+}
+
+.quienesSomos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+    font-size: 22px;
+}
+
+.quienesSomos .somosContenedor{
+    text-align: center;
+    padding: 20px;
+}
+
+.quienesSomos .somosImaganes{
+    display: flex;
+    flex-direction: row;
+    margin-right: 160px;
+}
+
+/*----FOOTER----*/
+
+.pie{
+    background-color: black;
+}
+
+.pie h6{
+    color: white;
+    position: relative;
+    left: 50rem;
+    bottom: 26px;
+    font-size: 16px;
+}
+
+.pie p{
+    color: white;
+    position: relative;
+    left: 48.5rem;
+    bottom: 20px;
+}
+
+.pie .enlaces{
+    position: relative;
+    left: 92rem;
+    top: 1rem;
+}
+
+/*Media @ */
+
+@media (max-width:700px){
+    header{
+       flex-direction: column;
+    }
+
+    nav{
+       height: 240px;
+       font-size: 1rem;
+    }
+
+    header .logo{
+       height: 200px;
+       width: 200px;
+    }
+}
+
+@media (max-width:700px){
+   header{
+      height: 250px;
+   }
+
+   header .logo{
+       height: 200px;
+       width: 200px;
+   }
+
+   header nav ul{
+       flex-direction: column;
+       position: absolute;
+       right: 13rem;
+       top: 0.5rem;
+   }
+
+   .comoEnCasa .text h1{
+       font-size: 30px;  
+   }
+
+   .comoEnCasa .text h2{
+       font-size: 30px;
+   }
+
+   .comoEnCasa .text{
+       position: absolute;
+       top: 17rem;
+       left: 2rem;
+   }
+
+   .comoEnCasa .horarios{
+       position: absolute;
+       width: 240px;
+       left: 20px;
+       bottom: 20px;
+   }
+}
