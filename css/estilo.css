@@ -355,58 +355,113 @@ header{
 }
 
 /*Media @ */
-
-@media (max-width:700px){
-    header{
-       flex-direction: column;
+@media (max-width:1100px){
+    header nav ul{
+        position: absolute;
+        right: 10rem;
+        bottom: 2rem;
+        font-size: 20px;
     }
 
-    nav{
-       height: 240px;
-       font-size: 1rem;
+    header{
+        height: 140px;
     }
 
     header .logo{
-       height: 200px;
-       width: 200px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .comoEnCasa .text h1{
+        font-size: 34px;
+    }
+
+    .comoEnCasa .text h2{
+        font-size: 34px;
     }
 }
 
-@media (max-width:700px){
-   header{
-      height: 250px;
-   }
+@media (max-width:900px){
+    header nav ul{
+        position: absolute;
+        right: 4rem;
+        bottom: 3rem;
+        font-size: 20px;  
+        }
+    
+    header{
+        height: 160px;
+    }
 
-   header .logo{
-       height: 200px;
-       width: 200px;
-   }
+    header .logo{
+        height: 120px;
+        width: 120px;
+    }
 
-   header nav ul{
-       flex-direction: column;
-       position: absolute;
-       right: 13rem;
-       top: 0.5rem;
-   }
+    .comoEnCasa .text h1{
+        font-size: 32px;
+    }
 
-   .comoEnCasa .text h1{
-       font-size: 30px;  
-   }
+    .comoEnCasa .text h2{
+        font-size: 32px;
+    }
+    
+    .comoEnCasa div{
+        position: absolute;
+        right: 8rem;
+        top: 14rem;
+    }
 
-   .comoEnCasa .text h2{
-       font-size: 30px;
-   }
+    .comoEnCasa .horarios{
+        position: absolute;
+        width: 240px;
+        left: 10px;
+        bottom: 20px;
+    }
 
-   .comoEnCasa .text{
-       position: absolute;
-       top: 17rem;
-       left: 2rem;
-   }
-
-   .comoEnCasa .horarios{
-       position: absolute;
-       width: 240px;
-       left: 20px;
-       bottom: 20px;
-   }
 }
+
+@media (max-width:700px){
+    header{
+       height: 270px;
+    }
+ 
+    header .logo{
+        height: 200px;
+        width: 200px;
+    }
+ 
+    header nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: 13rem;
+        top: 0.5rem;
+    }
+ 
+    nav{
+     height: 240px;
+     font-size: 1rem;
+    }
+ 
+    .comoEnCasa .text h1{
+        font-size: 30px;  
+    }
+ 
+    .comoEnCasa .text h2{
+        font-size: 30px;
+    }
+ 
+    .comoEnCasa .text{
+        position: absolute;
+        top: 17rem;
+        left: 2rem;
+    }
+ 
+    .comoEnCasa .horarios{
+        position: absolute;
+        width: 240px;
+        left: 20px;
+        bottom: 20px;
+    }
+ }
+ 
