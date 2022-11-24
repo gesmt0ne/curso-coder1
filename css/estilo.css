@@ -54,19 +54,20 @@ header nav h2{
 
 header{
     background-color: rgba(13, 20, 20, 0.753);
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     min-height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 
 .comoEnCasa{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/plato\ casero.jpg);
     background-size: cover;
 }
@@ -124,19 +125,33 @@ header{
     text-align: center;
 }
 
-.platosTitulo{
+.platosCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .platos{
     display: flex;
     width: 100%;
-    height: 100vh;
-    background-color: rgba(198, 199, 199, 0.753);
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: rgba(51, 51, 51, 0.932);
+}
+
+.platos .platosDelDia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section .platosCard .displayContainer{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .platos .card{
@@ -144,15 +159,24 @@ section .platosCard .displayContainer{
     height: 350px;
     border: 1px solid black;
     margin: 15px;
-    box-shadow: 6px 7px 5px 1px rgba(79,63,63,0.75);
-    -webkit-box-shadow: 6px 7px 5px 1px rgba(79,63,63,0.75);
-    -moz-box-shadow: 6px 7px 5px 1px rgba(79,63,63,0.75);;
 }
+
+.platosCard{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 
 .comoEnCasa .text a:hover{
     background-color: white;
     color: black;
     text-shadow: none;
+}
+
+.platos .platosDelDia{
+    color: white;
+    font-size: ;
 }
 
 .comoEnCasa a{
@@ -172,9 +196,22 @@ section .platosCard .displayContainer{
     height: 350px;
 }
 
+.platos .card{
+    transition: 1s;
+}
+
+.platos .card:hover{
+    transform: scale(1.1);
+    box-shadow: -5px 5px 19px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 5px 19px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 5px 19px 5px rgba(0,0,0,0.75);;
+}
+
+
+
 .eventos{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .eventos{ 
@@ -211,7 +248,7 @@ section .platosCard .displayContainer{
 
 .eventos{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/evento3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -233,7 +270,7 @@ section .platosCard .displayContainer{
 
 .contacto{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../img/beef.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -301,31 +338,70 @@ section .platosCard .displayContainer{
     left: 2rem;
 }
 
-.quienesSomos img{
-    width: 350px;
-    height: 450px;
-    border: 2px solid white;
+.sectionContainer{
+    width: 100%;
+    min-height: 100vh;
 }
 
-.quienesSomos{
-    width: 100%;
-    height: 100vh;
+.contenedor {
+    width: 90%;
+    min-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+.contenedor div,
+.contenedor .gridHeader,
+.ccontenedor .sidebar, 
+.contenedor .pieGrid,
+.contenedor .gridMain{
+    background-color: rgb(119, 119, 119);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .gridHeader {
+    background-color: rgb(57, 129, 129);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenedor .gridMain {
+    grid-column: span 2;
+}
+
+.contenedor .sidebar {
+    grid-column: 3 / 4;
+    background: #404e7c;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    grid-row: 2 / 4;
+}
+
+.contenedor .widgetUno,
+.contenedor .widgetDos{
+    background: #55a8fd;
+    color: white;
+    height: 100px;
+    text-align: center;
     display: flex;
     align-items: center;
-    margin: 50px 150px 50px 150px;
-    font-size: 22px;
+    justify-content: center;
 }
 
-.quienesSomos .somosContenedor{
-    text-align: center;
-    padding: 20px;
+.contenedor .pieGrid{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    grid-column: 1 / 4;
 }
 
-.quienesSomos .somosImaganes{
-    display: flex;
-    flex-direction: row;
-    margin-right: 160px;
-}
 
 /*----FOOTER----*/
 
@@ -364,7 +440,19 @@ section .platosCard .displayContainer{
 }
 
 
+@media screen and (max-width: 768px){
+    section .contenedor .gridMain {
+        grid-column: 1 / -1;
+    }
+    
+    section .contenedor .sidebar {
+        grid-column: 1 / -1;
+    }
 
+    section .contenedor .widgetUno{
+        grid-column: span 2;
+    }
+}
 
 /*Media @ */
 @media (max-width:1100px){
@@ -391,6 +479,12 @@ section .platosCard .displayContainer{
     .comoEnCasa .text h2{
         font-size: 34px;
     }
+
+    .contacto .tablaContenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width:900px){
@@ -462,7 +556,7 @@ section .platosCard .displayContainer{
 
 @media (max-width:700px){
     header{
-       height: 270px;
+       height: 300px;
     }
  
     header .logo{
@@ -483,7 +577,8 @@ section .platosCard .displayContainer{
     }
  
     .comoEnCasa .text h1{
-        font-size: 30px;  
+        font-size: 30px;
+        padding-top: 22px;  
     }
  
     .comoEnCasa .text h2{
