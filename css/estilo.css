@@ -65,7 +65,6 @@ header{
 
 
 .comoEnCasa{
-    padding-left: 3em;
     width: 100%;
     height: 100vh;
     background-image: url(../img/plato\ casero.jpg);
@@ -126,12 +125,7 @@ header{
 }
 
 .platosTitulo{
-    padding: 0;
-    margin: 0;
-    height: 35px;
-    width: 100%;
-    background-color: rgba(13, 20, 20, 0.753);
-    text-align: center;
+
 }
 
 .platos{
@@ -141,25 +135,11 @@ header{
     background-color: rgba(198, 199, 199, 0.753);
 }
 
-.cardDiferente{
-    align-items: center;
-    position: relative;
-    top: 10rem;
-}
-
-.card .cardDiferente{
+section .platosCard .displayContainer{
     display: flex;
-    flex-direction: row;
-}
-
-.card .cardDiferente{
-    display: flex;
-    flex-direction: row;
 }
 
 .platos .card{
-    position: relative;
-    top: 10rem;
     width: 300px;
     height: 350px;
     border: 1px solid black;
@@ -169,6 +149,11 @@ header{
     -moz-box-shadow: 6px 7px 5px 1px rgba(79,63,63,0.75);;
 }
 
+.comoEnCasa .text a:hover{
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
 
 .comoEnCasa a{
     text-decoration: none;
@@ -241,8 +226,8 @@ header{
 
 .comoEnCasa .horarios{
     position: absolute;
-    top: 16rem;
-    left: 20rem;
+    top: 12rem;
+    left: 8rem;
     text-shadow: 2px black;    
 }
 
@@ -291,14 +276,29 @@ header{
 .tablaContenedor{
     position: relative;
     top: 8rem;
-    left: 55rem;
+    left: 68rem;
+    width: 480px;
 }
 
-.formulario{
-    position: relative;
-    left: 55rem;
-    top: 20rem;
+.col-4 .mb-3 .formulario-1 .form-label{
     color: white;
+}
+
+.col-4 .mb-3 .form-label-2{
+    color: white;
+}
+
+.col-4 .mb-3-form-check .form-check-label{
+    color: white;
+}
+
+.col-4 .mb-3 .form-text{
+    color: rgb(155, 153, 153);
+}
+
+.col-4{
+    position: absolute;
+    left: 2rem;
 }
 
 .quienesSomos img{
@@ -354,13 +354,25 @@ header{
     top: 1rem;
 }
 
+
+.head .listasNav ul li{
+  transition: 1s;
+}
+
+.head .listasNav ul li:hover{
+  transform: scale(1.2);
+}
+
+
+
+
 /*Media @ */
 @media (max-width:1100px){
     header nav ul{
         position: absolute;
         right: 10rem;
         bottom: 2rem;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     header{
@@ -409,17 +421,44 @@ header{
     .comoEnCasa div{
         position: absolute;
         right: 8rem;
-        top: 14rem;
+        top: 10rem;
     }
 
     .comoEnCasa .horarios{
         position: absolute;
-        width: 240px;
-        left: 10px;
+        right: 8rem;
+        top: 14rem;
+        width: 330px;
+        height: 220px;
         bottom: 20px;
     }
 
 }
+
+.comoEnCasa .horarios .parrafoSlider{
+  position: absolute;
+  right: 1rem;
+  top: 6rem;
+  width: 310px;
+  height: 150px;
+  animation-duration: 4s;
+  animation-name: slider;
+  position: relative;
+}
+
+@keyframes slider{
+    from {
+        margin-left: 380px;
+        width: 330px;
+     }
+    
+      to {
+        left: 5px;
+        width: 330px;
+     }
+}
+
+
 
 @media (max-width:700px){
     header{
@@ -459,6 +498,8 @@ header{
  
     .comoEnCasa .horarios{
         position: absolute;
+        top: 2;
+        left: 8rem;
         width: 240px;
         left: 20px;
         bottom: 20px;

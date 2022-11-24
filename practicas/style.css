@@ -136,3 +136,41 @@ section .caja{
    width:100%;
  }
 }
+
+.flexContenedor{
+  width: 600px;
+  height: 500px;
+  background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexContenedor div{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.flexContenedor h4{
+ position: absolute;
+ background-color: rgba(0, 0, 0, 0.342);
+}
+
+.gridContenedor{
+  display: grid;
+  background-color: antiquewhite;
+  grid-template-columns: 40px auto 30px;
+  grid-template-rows: 30px auto 60px;
+  justify-content: ;
+}
+
+.gridContenedor div{
+  background-color: chartreuse;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+}

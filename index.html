@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Hoy como en casa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
     <header class="head"> 
         <a href="index.html"><img class="logo" src="./img/logo (2).jpg" alt="logo"></a>
@@ -26,10 +28,12 @@
           <h2>PLATOS CASEROS</h2>
           <a href="./pages/eventos.html">¡Hace tu reserva!</a>
         <div class="horarios">
-          <h3>Horarios<h3>
-          <p>Lunes a sabados por la mañana de 11:00 hasta 14:30hs.</p>
-          <p>Lunes a Viernes por la noche de 20:30 hasta 23:00hs<br>
-          Con la modalidad de delivery.</p>
+          <div class="parrafoSlider">
+            <p>Horarios<p>
+            <p>Lunes a sabados por la mañana de 11:00 hasta 14:30hs.</p>
+            <p>Lunes a Viernes por la noche de 20:30 hasta 23:00hs<br>
+            Con la modalidad de delivery.</p>
+          </div>
         </div>
         </div>
      </section>
@@ -60,73 +64,106 @@
         <a href="https://www.instagram.com/"><img src="./img/instagram.png"></a>
       </div>
       <div class="tablaContenedor">
-        <table>
-          <tr>
-            <th>Mis logros</th>
-            <th>Inauguracion</th>
-            <th>Mis viajes</th>
-            <th>Resetas de la casa</th>
-          </tr>
-          <tr>
-            <td>Estudios en la UB <br>de Buenos Aires</td>
-            <td rowspan="3">En el 2008 pude inaugurar mi local</td>
-            <td>Paris</td>
-            <td>Goulash</td>
-          </tr>
-          <tr>
-            <td rowspan="2">Pasantias en BA</td>
-            <td>Uruguay</td>
-            <td>Bondiola laqueada<br>con batatas fritas</td>
-          </tr>
-          <tr>         
-            <td>Londres</td>
-            <td>Raviolones de carne<br>con salsa de champignon</td>
-          </tr>
-        </table>
-      </div>
-      <div class="formulario">
-        <form class="formu" action="mailto:francsico.orive2@gmail.com">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="example@gmail.com">
-            <br>
-            <label for="ipass">Contraseña:</label>
-            <input id="ipass" type="password" name="pass">
-            <br>
-            <label for="contacto">Contacto:</label>
-            <input type="tel" name="contacto" id="contacto" placeholder="Numero de contacto">
-            <br> 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetear">
-        </form>
-      </div>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Estudios</th>
+              <th scope="col">Viajes laborales</th>
+              <th scope="col">Cocineros</th>
+            </tr>
+          </thead>
+               <tbody>
+                <tr>
+                <th scope="row">1</th>
+                 <td>Universidad gastronomica de Buenos Aires</td>
+                 <td>Paris</td>
+                 <td>Mia Sarragoycochea</td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                 <td></td>
+                 <td>Buenos Aires</td>
+                 <td>Rodrigo Fredes</td>
+                </tr>
+                <tr>
+                 <th scope="row">3</th>
+                 <td colspan="2"></td>
+                 <td>Leandro Crutchet</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+           <div class="col-4">
+            
+            <div class="mb-3">
+            <form class="formulario-1">
+              <label for="exampleInputEmail1" class="form-label">Direccion de Email.</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartiremos tu email con nadie.</div>
+            </div>
+
+             <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label-2">Contraseña.</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+             </div>
+
+             <div class="mb-3-form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Verificar.</label>
+             </div>
+
+             <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            </div>
+
+          </div>
      </section>
 
-         <h2 class="platosTitulo">Nuestros platos</h2>
+    
      <section class="platos">
-         <div class="card">
-           <a href="./pages/platos.html">
-           <img src="./img/salmon.jpg" alt="evento">
-           </a>
-         </div>
-         <div class="card">
-           <a href="./pages/platos.html">
-           <img src="./img/eventos2.jpg" alt="evento">
-           </a>      
-         </div>
-         <div class="card">
-           <a href="./pages/platos.html">
-           <img src="./img/marta-robles-diaz-_zpraVXcKlk-unsplash.jpg" alt="evento">
-           </a>
-         </div>
-         <div class="cardDiferente">
-           <h2>Comidas</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque explicabo atque vitae, 
-           tempora animi unde ullam possimus nam,
-           enim beatae neque, molestias dolores.
-           Quam error molestias neque molestiae labore?
-           </p>
-           <a href="./pages/platos.html">¡Ver mas!</a>
-         </div>
+
+        <div class="platosCard">
+
+          <div class="displayContainer">
+           <div class="card">
+            <a href="./pages/platos.html">
+            <img src="./img/salmon.jpg" alt="evento">
+            </a>
+           </div>
+
+           <div class="card">
+            <a href="./pages/platos.html">
+            <img src="./img/eventos2.jpg" alt="evento">
+            </a>      
+           </div>
+
+           <div class="card">
+            <a href="./pages/platos.html">
+            <img src="./img/marta-robles-diaz-_zpraVXcKlk-unsplash.jpg" alt="evento">
+            </a>
+           </div>
+          </div>
+          
+          <div class="displayContainer">
+           <div class="card">
+            <a href="./pages/platos.html"></a>
+            <img src="./img/tortilla.jpg" alt="evento">
+           </div>
+
+           <div class="card">
+            <a href="./pages/platos.html"></a>
+            <img src="./img/pinchos.jpg" alt="eventos">
+           </div>
+
+           <div class="card">
+            <a href="./pages/platos.html"></a>
+            <img src="./img/papitas.jpg" alt="">
+           </div>
+          </div>
+      
+        </div>
+
      </section>
      <section class="quienesSomos">
         <div class="somosContenedor">
@@ -157,5 +194,8 @@
       <h6>Derechos reservados</h6>
       <p>francisco.orive2@gmail.com</p>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   </script>
 </body>
 </html>
