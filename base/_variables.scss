@@ -1,0 +1,83 @@
+//! Variables
+
+
+
+
+
+
+
+
+
+//!OPERACIONES
+
+$ancho: 720px;
+
+img{
+    width: $ancho / 2 +10;
+}
+
+
+//! MAPAS
+
+$button:(
+   /* key - value (valor) */
+   fondo-boton: black,
+   bordes-boton: 2px solid black,
+   color-texto: white,
+);
+
+.boton{
+    background-color: map-get($button, fondo-boton);
+    border: map-get($button, bordes-boton);
+    color: map-get($button, color-texto); 
+}
+
+//! CONDICIONALES
+//!Reglas de valor.
+
+//OPERADORES DE COMPARACION//
+
+//* == son iguales
+!= es diferente
+> mayor que
+< menor que
+>= mayor o igual
+<= menor o igual
+
+// if(condicional){
+//  se ejecuta este codigo
+// } else {
+//  se ejecuta otro
+// } 
+
+//*SELECCIONAR DARKMODE O LIGHTMODE
+
+@mixin mods($darkmode){
+    @if $darkmode == black{
+        border: solid 2px blueviolet;
+    }@else{
+        border:solid 2px aqua;
+    }
+}
+
+.bg-condicion(
+    @include modos(black)
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

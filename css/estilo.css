@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /*----HEADER----*/
@@ -15,15 +15,20 @@ header a{
     color: white;
 }
 
+header .listasNav{
+    display: flex;
+}
+
 header nav ul{
     list-style: none;
-    display: flex;
     align-items: center;
+    font: 1.2rem;
 }
 
 header nav ul li{
     margin: 5px 10px 5px 10px;
     padding: 10px;
+    font-size: 1.2rem;
 }
 
 
@@ -36,7 +41,7 @@ header nav h2{
 
 .head ul{
     display: flex;
-    flex-wrap: wrap 700px;
+    flex-wrap: nowrap;
 }
 
 .head .logo{
@@ -44,7 +49,6 @@ header nav h2{
     left: 1%;
     top: 8%;
 }
-
 
 .logo{
     border-radius: 50%;
@@ -64,7 +68,6 @@ header{
     z-index: 1;
 }
 
-
 .comoEnCasa{
     width: 100%;
     min-height: 100vh;
@@ -72,9 +75,15 @@ header{
     background-size: cover;
 }
 
-.comEnCasa .text a{
+.comoEnCasa .text a{
     padding: 5px;
+    text-decoration: none;
+    color:  rgb(57, 129, 129);
+    background-color: black;
+    border-radius: 10px;
+    font-size: 1.4rem;
 }
+
 
 .text{
     width: 40%;
@@ -87,10 +96,12 @@ header{
 
 .text h1 {
     font-size: 3.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .text h2{
     font-size: 2.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .text p{
     font-size: 1rem;
@@ -167,24 +178,21 @@ section .platosCard .displayContainer{
     gap: 12px;
 }
 
+.comoEnCasa .text a{
+    transition: 1s;
+}
 
 .comoEnCasa .text a:hover{
     background-color: white;
     color: black;
     text-shadow: none;
+    clip-path: ;
+    animation-delay: 0,5s;
 }
 
 .platos .platosDelDia{
     color: white;
     font-size: ;
-}
-
-.comoEnCasa a{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border-radius: 10%;
 }
 
 .comoEnCasa p{
@@ -436,7 +444,7 @@ section .platosCard .displayContainer{
 }
 
 .head .listasNav ul li:hover{
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 
@@ -455,6 +463,26 @@ section .platosCard .displayContainer{
 }
 
 /*Media @ */
+@media (max-width:1440px){
+    header .logo{
+        width: 100px;
+        height: 100px;
+        margin-top: -4px;
+    }
+    header{
+        height: 110px;
+    }
+
+    .comoEnCasa .text h1{
+        font-size: 2.8rem;
+    }
+    
+    .comoEnCasa .text h2{
+        font-size: 2.2rem;
+    }
+}
+
+
 @media (max-width:1100px){
     header nav ul{
         position: absolute;
@@ -473,11 +501,11 @@ section .platosCard .displayContainer{
     }
 
     .comoEnCasa .text h1{
-        font-size: 34px;
+        font-size: 2.6rem;
     }
 
     .comoEnCasa .text h2{
-        font-size: 34px;
+        font-size: 2rem;
     }
 
     .contacto .tablaContenedor{
@@ -487,16 +515,18 @@ section .platosCard .displayContainer{
 
 }
 
-@media (max-width:900px){
+@media (max-width:970px){
     header nav ul{
         position: absolute;
         right: 4rem;
         bottom: 3rem;
-        font-size: 20px;  
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;  
         }
     
     header{
-        height: 160px;
+        height: 140px;
     }
 
     header .logo{
@@ -504,12 +534,16 @@ section .platosCard .displayContainer{
         width: 120px;
     }
 
+    .comoEnCasa .text{
+        padding-top: 6rem;
+    }
+
     .comoEnCasa .text h1{
-        font-size: 32px;
+        font-size: 2.1rem;
     }
 
     .comoEnCasa .text h2{
-        font-size: 32px;
+        font-size: 2rem;
     }
     
     .comoEnCasa div{
@@ -528,6 +562,101 @@ section .platosCard .displayContainer{
     }
 
 }
+
+@media (max-width:875px){
+    header{
+       height: 140px;
+    }
+
+    header ul li{
+        margin: 2px;
+    }
+}
+
+@media (max-width:855px){
+    header ul{
+        position: absolute;
+        bottom: 3rem;
+    }
+}
+
+@media (max-width:700px){
+    header{
+       height: 300px;
+    }
+ 
+    header .logo{
+        height: 200px;
+        width: 200px;
+    }
+ 
+    header nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: 13rem;
+        top: 0.5rem;
+    }
+ 
+    nav{
+     height: 240px;
+     font-size: 1rem;
+    }
+ 
+    .comoEnCasa .text h1{
+        font-size: 30px;
+        padding-top: 22px;  
+    }
+ 
+    .comoEnCasa .text h2{
+        font-size: 30px;
+    }
+ 
+    .comoEnCasa .text{
+        position: absolute;
+        top: 17rem;
+        left: 2rem;
+    }
+ 
+    .comoEnCasa .horarios{
+        position: absolute;
+        top: 2;
+        left: 8rem;
+        width: 240px;
+        left: 20px;
+        bottom: 20px;
+    }
+ }
+
+@media (max-width:650px){
+    header{
+        height: 200px;
+    }
+    main .comoEnCasa .text h1{
+        font-size: 1.8rem;
+    }
+    main .comoEnCasa .text h2{
+        font-size: 1.6rem;
+    }
+
+    header .logo{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width:375px){
+    main .comoEnCasa .text h1{
+        ;
+    }
+    main .comoEnCasa .text h2{
+       font-size: ;
+    }
+
+    header .logo{
+        height: 20px;
+        width: 20px;
+    }
+ }
 
 .comoEnCasa .horarios .parrafoSlider{
   position: absolute;
